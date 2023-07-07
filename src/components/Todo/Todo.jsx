@@ -1,14 +1,23 @@
 import React from "react";
 import { FaTrashAlt } from "react-icons/fa";
 
-export default function Todo({ text }) {
-  const handleClick = (e) => {
-    console.log(e);
+export default function Todo({ todo, onUpdate, onDelete }) {
+  const { id, text, status } = todo;
+  const handleChange = (e) => {
+    const status = e.target.checked ? "completed" : "active";
+    onUpdate({ ...todo, status });
   };
+  const handleDelete = () => onDelete(todo);
   return (
     <li>
-      <div>{text}</div>
-      <button onClick={handleClick}>
+      <input
+        type="checkbox"
+        id={id}
+        checked={status === "completed"}
+        onChange={handleChange}
+      />
+      <label htmlFor={id}>{text}</label>
+      <button onClick={handleDelete}>
         <FaTrashAlt />
       </button>
     </li>
