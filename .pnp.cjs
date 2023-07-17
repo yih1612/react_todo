@@ -31,6 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:02afb0b087bf5a3fab984c0069cf119ce18be751f2e764ffb668f04b442896872df74860795b8fc7dc1a16f4930e7e883abe3582d56228b6d25667e21d04b38b#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:02afb0b087bf5a3fab984c0069cf119ce18be751f2e764ffb668f04b442896872df74860795b8fc7dc1a16f4930e7e883abe3582d56228b6d25667e21d04b38b#npm:13.5.0"],\
+            ["dayjs", "npm:1.11.9"],\
             ["eslint-config-react-app", "virtual:02afb0b087bf5a3fab984c0069cf119ce18be751f2e764ffb668f04b442896872df74860795b8fc7dc1a16f4930e7e883abe3582d56228b6d25667e21d04b38b#npm:7.0.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:02afb0b087bf5a3fab984c0069cf119ce18be751f2e764ffb668f04b442896872df74860795b8fc7dc1a16f4930e7e883abe3582d56228b6d25667e21d04b38b#npm:18.2.0"],\
@@ -7602,6 +7603,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["dayjs", [\
+        ["npm:1.11.9", {\
+          "packageLocation": "./.yarn/cache/dayjs-npm-1.11.9-c47d327b7c-a4844d83dc.zip/node_modules/dayjs/",\
+          "packageDependencies": [\
+            ["dayjs", "npm:1.11.9"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["debug", [\
         ["npm:2.6.9", {\
           "packageLocation": "./.yarn/cache/debug-npm-2.6.9-7d4cb597dc-d2f51589ca.zip/node_modules/debug/",\
@@ -15113,6 +15123,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:02afb0b087bf5a3fab984c0069cf119ce18be751f2e764ffb668f04b442896872df74860795b8fc7dc1a16f4930e7e883abe3582d56228b6d25667e21d04b38b#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:02afb0b087bf5a3fab984c0069cf119ce18be751f2e764ffb668f04b442896872df74860795b8fc7dc1a16f4930e7e883abe3582d56228b6d25667e21d04b38b#npm:13.5.0"],\
+            ["dayjs", "npm:1.11.9"],\
             ["eslint-config-react-app", "virtual:02afb0b087bf5a3fab984c0069cf119ce18be751f2e764ffb668f04b442896872df74860795b8fc7dc1a16f4930e7e883abe3582d56228b6d25667e21d04b38b#npm:7.0.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:02afb0b087bf5a3fab984c0069cf119ce18be751f2e764ffb668f04b442896872df74860795b8fc7dc1a16f4930e7e883abe3582d56228b6d25667e21d04b38b#npm:18.2.0"],\

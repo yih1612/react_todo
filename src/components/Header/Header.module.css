@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.darkday {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  background-color: var(--color-accent);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.filter {
+  position: relative;
+  background-color: transparent;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.filter:hover,
+.filter.selected {
+  opacity: 0.8;
+}
+
+.filter.selected::after {
+  position: absolute;
+  display: block;
+  bottom: 4px;
+  background-color: var(--color-selected);
+  width: 100%;
+  height: 6px;
+  content: "";
+  transform: skewX(16deg);
+  z-index: -1;
+}
