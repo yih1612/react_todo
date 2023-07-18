@@ -9,7 +9,7 @@
   border: none;
   outline: none;
   border-top: 1px solid var(--color-border);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 .input:hover {
   filter: brightness(97%);
@@ -23,7 +23,7 @@
   border-right: none;
   border-bottom: none;
   color: var(--color-white);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 

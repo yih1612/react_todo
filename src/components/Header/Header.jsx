@@ -15,7 +15,7 @@ export default function Header({ filters, filter, onFilterChange }) {
             onChange={toggleDarkMode}
             moonColor={"#22243b"}
             sunColor={"#e49b5a"}
-            size={17}
+            size={20}
           />
         </button>
         <div className={styles.day}>{dayjs().format("YYYY.MM.DD.ddd")}</div>
