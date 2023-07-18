@@ -1,5 +1,6 @@
 import React from "react";
 import { FaTrashAlt } from "react-icons/fa";
+import styles from "./Todo.module.css";
 
 export default function Todo({ todo, onUpdate, onDelete }) {
   const { id, text, status } = todo;
@@ -9,17 +10,30 @@ export default function Todo({ todo, onUpdate, onDelete }) {
   };
   const handleDelete = () => onDelete(todo);
   return (
-    <li>
+    <li className={styles.todo}>
       <input
+        className={styles.checkbox}
         type="checkbox"
         id={id}
         checked={status === "completed"}
         onChange={handleChange}
       />
-      <label htmlFor={id}>{text}</label>
-      <button onClick={handleDelete}>
-        <FaTrashAlt />
-      </button>
+      <label
+        className={`${styles.text} ${status === "completed" && styles.checked}`}
+        htmlFor={id}
+      >
+        {text}
+      </label>
+      <span className={styles.icon}>
+        <button
+          className={`${styles.button} ${
+            status === "completed" && styles.checked
+          }`}
+          onClick={handleDelete}
+        >
+          <FaTrashAlt />
+        </button>
+      </span>
     </li>
   );
 }

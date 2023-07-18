@@ -1,12 +1,22 @@
 :root {
-  --color-bg-dark: #4b5878;
   --color-bg: rgb(233, 217, 175);
   --color-grey: #d1d1d1;
-  --color-text: #22243b;
+  --color-text: #0c0c11;
   --color-accent: #e49b5a;
   --color-border: #222222b8;
   --color-selected: #ffffff87;
   --color-white: white;
+  --color-red: rgb(248, 55, 55);
+  --color-checkbox: #f3f3f3;
+  --color-scrollbar: #aaa7a7;
+  --color-header: #22243b;
+  --color-under: grey;
+}
+
+html.dark {
+  --color-bg: #4b5878;
+  --color-text: #f3f3f3;
+  --color-header: #e49b5a;
 }
 
 @font-face {
@@ -54,6 +64,7 @@ body {
   box-shadow: 7px 7px 17px -6px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 7px 7px 17px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 7px 7px 17px -6px rgba(0, 0, 0, 0.75);
+  transition: background-color 0.3s ease-in-out;
   z-index: 0;
 }
 #root::before {
