@@ -53,7 +53,7 @@ https://funny-pasca-9ac0c1.netlify.app/
    localstorage 혹은 컴퓨터의 모드에 따라 darkMode 상태 변경(useEffect을 이용하여 첫 마운트 될 때 적용)
 10. [ TodoList ]  
     localstorage에 저장  
-    useState에는 초기값을 전달할 수 있는데 함수가 아닌 콜백함수로 전달
+    useState에는 초기값을 전달할 수 있는데 함수가 아닌 콜백함수로 전달 (함수로 전달시 컴포넌트 상태가 변경될 때마다 초기값을 읽어온다 - 내부적으로 값을 가지고 있음에도 불구하고)
 
 ## 정리 - CSS
 
